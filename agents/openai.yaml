@@ -1,0 +1,6 @@
+interface:
+  display_name: "Admitly Essay Coach"
+  short_description: "本科至博士申请文书的中文访谈、叙事策略、事实核对与逐段修改教练"
+  default_prompt: "使用 $admitly-essay-coach 诊断我上传的文书，用中文解释并逐段修改英文，保留真实经历。"
+policy:
+  allow_implicit_invocation: true
