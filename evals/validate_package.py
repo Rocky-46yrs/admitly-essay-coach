@@ -6,7 +6,8 @@ import sys
 
 REQUIRED = ['SKILL.md', 'README.md', 'CHANGELOG.md', 'LICENSE', 'SOURCES.md', 'agents/openai.yaml',
     'evals/cases.json', 'evals/README.md', 'evals/RESULTS.md', 'MERGE_NOTES.md',
-    'references/interpretation-proposals.md', 'assets/handoff.md']
+    'references/interpretation-proposals.md', 'assets/handoff.md',
+    'references/session-flow.md', 'evals/journeys.json']
 REQUIRED += ['references/'+n+'.md' for n in ('application-routing','interview-zh','essay-strategy',
     'undergraduate','research-applications','ps-sop-guide','program-fit','scoring','style-guide','revision-protocol')]
 REQUIRED += ['assets/'+n+'.md' for n in ('diagnosis','paragraph-revision','fact-ledger','program-brief','draft','strategy-outline')]
@@ -22,7 +23,7 @@ def validate(root):
         return errors
     skill = (root/'SKILL.md').read_text()
     header = re.match(r'^---\n(.*?)\n---\n', skill, re.S)
-    if not header or not re.search(r'^name: admitly-essay-coach$', header[1], re.M) or not re.search(r'^description: .{20,1024}$', header[1], re.M) or 'version: "0.3.2"' not in header[1]:
+    if not header or not re.search(r'^name: admitly-essay-coach$', header[1], re.M) or not re.search(r'^description: .{20,1024}$', header[1], re.M) or 'version: "0.3.3"' not in header[1]:
         errors.append('Invalid entrypoint metadata')
     ui = (root/'agents/openai.yaml').read_text()
     desc = re.search(r'short_description: "([^"]+)"', ui)
@@ -58,7 +59,7 @@ def validate(root):
     try:
         data = json.loads((root/'evals/cases.json').read_text())
         cases = data['cases']
-        if data['version'] != '0.3.2' or data['synthetic'] is not True:
+        if data['version'] != '0.3.3' or data['synthetic'] is not True:
             errors.append('Invalid eval metadata')
         if [c['id'] for c in cases] != [f'E{i:02}' for i in range(1,49)]:
             errors.append('Expected E01–E48 exactly once in order')
@@ -69,6 +70,18 @@ def validate(root):
                 errors.append('Invalid eval '+c['id'])
     except (ValueError, KeyError, TypeError) as e:
         errors.append('Malformed eval data: '+str(e))
+    try:
+        journeys = json.loads((root/'evals/journeys.json').read_text())
+        if journeys['version'] != '0.3.3' or journeys['synthetic'] is not True:
+            errors.append('Invalid journey metadata')
+        ids = [j['id'] for j in journeys['journeys']]
+        if ids != ['J01','J02','J03','J04','J05']:
+            errors.append('Invalid journey IDs')
+        for j in journeys['journeys']:
+            if not j.get('turns') or not all(isinstance(t,str) and t.strip() for t in j['turns']) or not j.get('must'):
+                errors.append('Invalid journey '+j['id'])
+    except (ValueError, KeyError, TypeError) as e:
+        errors.append('Malformed journey data: '+str(e))
     return errors
 
 if __name__ == '__main__':

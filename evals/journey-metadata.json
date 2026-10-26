@@ -1,0 +1,155 @@
+[
+  {
+    "journey": "J01",
+    "turn": 1,
+    "completed": true,
+    "exit_code": 0,
+    "model_requested": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "seconds": 45.87,
+    "prompt_sha256": "79d92ccf2ecd7c676d43432fed6b2d04ea38e5b2a8fe5b9d078c236073d64b31",
+    "reference_read_commands": [
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/references/session-flow.md'\"",
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/references/application-routing.md'\"",
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/references/interview-zh.md'\"",
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/references/ps-sop-guide.md'\""
+    ]
+  },
+  {
+    "journey": "J01",
+    "turn": 2,
+    "completed": true,
+    "exit_code": 0,
+    "model_requested": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "seconds": 58.57,
+    "prompt_sha256": "42c43ebfbe27002fa4361397949d0c302299a4a535811e04864742cbc100e5c4",
+    "reference_read_commands": [
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/references/essay-strategy.md'\"",
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/references/application-routing.md'\"",
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/references/session-flow.md'\"",
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/references/ps-sop-guide.md'\""
+    ]
+  },
+  {
+    "journey": "J01",
+    "turn": 3,
+    "completed": true,
+    "exit_code": 0,
+    "model_requested": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "seconds": 50.56,
+    "prompt_sha256": "bac375e30d735f2f1c5e4a6f6cdcb4c03053d5d40a1cc4378b61812dd2f1c2a8",
+    "reference_read_commands": [
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/references/style-guide.md'\"",
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/references/application-routing.md'\"",
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/references/ps-sop-guide.md'\""
+    ]
+  },
+  {
+    "journey": "J01",
+    "turn": 4,
+    "completed": true,
+    "exit_code": 0,
+    "model_requested": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "seconds": 36.78,
+    "prompt_sha256": "582f73ae4033e0ccac6e6ec85ee0ac1f55b0136c8f843bd86ec4f359fd23bb59",
+    "reference_read_commands": [
+      "/bin/zsh -lc 'cat .agents/skills/admitly-essay-coach/references/revision-protocol.md .agents/skills/admitly-essay-coach/references/style-guide.md'"
+    ]
+  },
+  {
+    "journey": "J02",
+    "turn": 1,
+    "completed": true,
+    "exit_code": 0,
+    "model_requested": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "seconds": 42.97,
+    "prompt_sha256": "6f4d06a9b4dffb7a3cabc5a9efc6c1d4527df705316212e9358581b9040ebb34",
+    "reference_read_commands": [
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/references/application-routing.md' '[WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/references/revision-protocol.md' '[WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/references/style-guide.md'\""
+    ]
+  },
+  {
+    "journey": "J02",
+    "turn": 2,
+    "completed": true,
+    "exit_code": 0,
+    "model_requested": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "seconds": 35.8,
+    "prompt_sha256": "628462512fc083bcabd85a95cd9ff601bcbf6f69e888bb1135cc2921d0da5cb8",
+    "reference_read_commands": [
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/references/style-guide.md'\"",
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/references/application-routing.md'\"",
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/references/revision-protocol.md'\""
+    ]
+  },
+  {
+    "journey": "J02",
+    "turn": 3,
+    "completed": true,
+    "exit_code": 0,
+    "model_requested": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "seconds": 32.11,
+    "prompt_sha256": "51b6bd838a4e347d6d40fe1cfec1398c53f7d426b7fe34a525d79d3fc45a65cf",
+    "reference_read_commands": [
+      "/bin/zsh -lc 'cat [WORKSPACE]/work/admitly-paired-eval/environments/v033/.agents/skills/admitly-essay-coach/assets/handoff.md'"
+    ]
+  },
+  {
+    "journey": "J03",
+    "turn": 1,
+    "completed": true,
+    "exit_code": 0,
+    "model_requested": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "seconds": 30.74,
+    "prompt_sha256": "1d21a4d30e1d5a9500bd62db4748f55066202d6a3b5cf87762e0427bf21ae20b",
+    "reference_read_commands": []
+  },
+  {
+    "journey": "J04",
+    "turn": 1,
+    "completed": true,
+    "exit_code": 0,
+    "model_requested": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "seconds": 44.48,
+    "prompt_sha256": "dfae0056982933af2d5085a4772e62712c54fe77361aaee34e87c10df473f63d",
+    "reference_read_commands": [
+      "/bin/zsh -lc 'cat .agents/skills/admitly-essay-coach/references/session-flow.md .agents/skills/admitly-essay-coach/references/application-routing.md'"
+    ]
+  },
+  {
+    "journey": "J05",
+    "turn": 1,
+    "completed": true,
+    "exit_code": 0,
+    "model_requested": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "seconds": 51.69,
+    "prompt_sha256": "cabbf02eb6bf4a010e5f6c4f6e38b130bdc7d2988f7652d9d32808b57811d455",
+    "reference_read_commands": [
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033scope/.agents/skills/admitly-essay-coach/references/style-guide.md'\"",
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033scope/.agents/skills/admitly-essay-coach/references/application-routing.md'\"",
+      "/bin/zsh -lc \"cat '[WORKSPACE]/work/admitly-paired-eval/environments/v033scope/.agents/skills/admitly-essay-coach/references/revision-protocol.md'\""
+    ]
+  },
+  {
+    "journey": "J05",
+    "turn": 2,
+    "completed": true,
+    "exit_code": 0,
+    "model_requested": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "seconds": 56.19,
+    "prompt_sha256": "a0bc757fcc74836da1e851bd947904fabf4a915dea5e5802590b9a3669dc5ccc",
+    "reference_read_commands": [
+      "/bin/zsh -lc 'cat .agents/skills/admitly-essay-coach/references/revision-protocol.md .agents/skills/admitly-essay-coach/references/style-guide.md .agents/skills/admitly-essay-coach/references/application-routing.md'"
+    ]
+  }
+]

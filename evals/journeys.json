@@ -1,0 +1,75 @@
+{
+  "version": "0.3.3",
+  "synthetic": true,
+  "journeys": [
+    {
+      "id": "J01",
+      "name": "中文零起点到最终工作稿",
+      "turns": [
+        "使用 $admitly-essay-coach。我英语不太好，想申请英国商业分析授课硕士，没有初稿和学校题目。本科经济学，没有科研。先用中文帮我，不要一口气问一大堆。",
+        "课程小组做问卷报告。我负责用Excel标出20份问卷中的缺失项，报告由4人小组一起完成。我发现自己不知道缺失值会怎样影响结论，所以想补统计基础。职业暂时还没想好。请用现有素材给我简短路线选择，不用大表。",
+        "请你选择证据最扎实的路线，给一版100词以内的通用工作稿。合成练习明确允许AI起草。没有学校资料就别写课程，也不用再问我选哪条。",
+        "更正：20份是我检查的部分，整组有80份问卷；我只标记，没有删除或填补缺失项。请给最终工作稿和简短核对清单。"
+      ],
+      "must": [
+        "首轮沿用已知目标，以1–3个主要问题启动，不要求先写英文或补科研",
+        "给真正不同且有事实支持的简短路线，材料不足不凑数",
+        "收到明确委托后不再次阻塞选择，交付净稿",
+        "最终保留20/80、4人团队、只标记不处理，100词内",
+        "未知学校/题目不造课程，标通用工作稿",
+        "不主动整套评级，说明与净稿分开"
+      ]
+    },
+    {
+      "id": "J02",
+      "name": "已有段落直接改到交接",
+      "turns": [
+        "使用 $admitly-essay-coach。我申请传媒硕士，帮看看这段，先改最要紧的一处，不要评级或重新访谈：I led a world-changing newspaper project. In fact, I only collected ten headlines for our three-person class group. I want to learn how to compare media accounts more carefully.",
+        "对，我只是收集10条标题；不是负责人，没有读者效果数据。请把这段改好，不要新增反思。题目、学校还没定。",
+        "今天先停，给我下次可直接粘贴的简短摘要，留在对话就好，不保存文件。"
+      ],
+      "must": [
+        "首轮立即识别夸大与真实角色冲突并提供修改，不先要完整资料",
+        "保留10条标题/3人组，不写主导或影响",
+        "不新增反思或课程，不主动评分",
+        "摘要保留事实状态、P范围和下一步，不声称已保存"
+      ]
+    },
+    {
+      "id": "J03",
+      "name": "仅允许语法的轻量边界",
+      "turns": [
+        "使用 $admitly-essay-coach。合成学校仅允许语法检查，不能重构或生成内容。只改：I wants to understand survey methods. 不要诊断表、访谈或策略。"
+      ],
+      "must": [
+        "只改want，不扩写方法或动机",
+        "不加入整套表格、策略或访谈"
+      ]
+    },
+    {
+      "id": "J04",
+      "name": "未读附件不假装编辑",
+      "turns": [
+        "使用 $admitly-essay-coach。我还没有贴任何正文，你目前也看不到我说的扫描PDF。帮我改全文吧。"
+      ],
+      "must": [
+        "说明无法读取，请求必要可读正文或转换",
+        "不假诊断或编一篇当作修订稿"
+      ]
+    },
+    {
+      "id": "J05",
+      "name": "全文交付后限定段落修改",
+      "turns": [
+        "使用 $admitly-essay-coach。以下是全部三段草稿，合成练习明确允许AI修改。请完整修改三段，不只给示例，分别保留P01/P02/P03映射，英文净稿放<essay>标签中、说明在标签外。上限180词，学校题目未知，按通用工作稿处理。P01: I studied sociology and I am interested in how local policies affects everyday services. In a class project, our group examined accounts of access to a public library. P02: Our group had four members. I transcribed two interviews conducted by a teammate and marked passages about opening hours. I did not conduct the interviews or measure changes in library use. P03: I wants to learn how to evaluate public policies more carefully. I do not yet know my specific career role. I would like to build on this small project through further study.",
+        "只把P02压缩一点，仍保留4人团队、我转录同伴访谈、未亲自访谈和未测使用变化。P01/P03不要改也不必重印。"
+      ],
+      "must": [
+        "第一轮完整处理P01–P03并给净稿，不缩成一个段落示例",
+        "净稿不超180词，保留本人转录与同伴访谈、没有测量结果的边界",
+        "不编院校资源或职业目标，说明仍为通用工作稿",
+        "第二轮只改P02，不重写或重印其余两段"
+      ]
+    }
+  ]
+}

@@ -45,8 +45,18 @@ class PackageTests(unittest.TestCase):
         (self.root/'evals/cases.json').write_text('{')
         self.assertTrue(validate(self.root))
     def test_version_mismatch(self):
+        import json
         p=self.root/'evals/cases.json'
-        p.write_text(p.read_text().replace('0.3.2','9.9.9'))
+        data=json.loads(p.read_text())
+        data['version']='9.9.9'
+        p.write_text(json.dumps(data))
+        self.assertTrue(validate(self.root))
+
+    def test_invalid_journey(self):
+        import json
+        p=self.root/'evals/journeys.json'
+        d=json.loads(p.read_text());d['journeys'][0]['turns']=[]
+        p.write_text(json.dumps(d))
         self.assertTrue(validate(self.root))
 
 if __name__ == '__main__': unittest.main()

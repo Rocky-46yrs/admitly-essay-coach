@@ -1,8 +1,16 @@
-# Admitly Essay Coach V0.3.2
+# Admitly Essay Coach V0.3.3
 
-[下载 v0.3.2 安装包](https://github.com/Rocky-46yrs/admitly-essay-coach/releases/download/v0.3.2/admitly-essay-coach-v0.3.2.zip) · [版本发布](https://github.com/Rocky-46yrs/admitly-essay-coach/releases) · [测试报告](evals/RESULTS.md)
+[下载 v0.3.3 安装包](https://github.com/Rocky-46yrs/admitly-essay-coach/releases/download/v0.3.3/admitly-essay-coach-v0.3.3.zip) · [版本发布](https://github.com/Rocky-46yrs/admitly-essay-coach/releases) · [测试报告](evals/RESULTS.md)
 
 面向中国申请者的免费开源 Agent Skill。优先兼容 Codex；不包含网站、账户或服务。Skill 本身无运行依赖；AI 客户端费用和数据处理规则由客户端决定。
+
+## 第一次使用，直接选一句
+
+- **没有初稿**：`使用 $admitly-essay-coach。我申请授课型硕士，还不会写PS。请用中文一步步帮我，先问两个最重要的问题。`
+- **已有文书**：`使用 $admitly-essay-coach，帮我看看下面这段。先给最需要改的一点和一个修改版本，不用评级。<贴正文>`
+- **只想改英文**：`使用 $admitly-essay-coach，只修这段语法，保留结构和真实贡献。<贴正文>`
+
+不用先整理完整申请档案，也不用先用英文讲故事。能提供当期题目和篇幅时再补充；没有时可以先做通用编辑，但不能确认已经满足目标项目的提交要求。
 
 ## 能做什么
 先读已有文书，给出诊断和可追踪的逐段修改；没有草稿时，以每轮 1–3 个问题挖掘真实素材，再比较叙事策略、形成大纲与工作稿。保留事实账本、稳定段落编号、N/A 评分、个人声音与修改理由。
@@ -10,12 +18,12 @@
 英美授课型硕士 PS/SOP 是原有重点。本科（Common App、补充文书等）、研究型硕士和博士（含 Research Statement）新增专门指导模块。美国、英国、加拿大、澳大利亚有路由边界；其他国家可提供通用指导。**模块存在不代表已核验所有学校、年度或题目**。学校当前官方要求和 AI 政策优先，无法核验就标记待核实。没有浏览工具也能诊断表达，但不能声称联网验证。
 
 ## 安装到 Codex
-1. 解压 `admitly-essay-coach-v0.3.2.zip`，得到 `admitly-essay-coach` 文件夹；确认其下一层就是 `SKILL.md`。
+1. 解压 `admitly-essay-coach-v0.3.3.zip`，得到 `admitly-essay-coach` 文件夹；确认其下一层就是 `SKILL.md`。
 2. 个人安装：将整个文件夹复制到 `~/.agents/skills/admitly-essay-coach/`。项目内安装则放到该项目的 `.agents/skills/admitly-essay-coach/`，二选一，避免同名重复。
 3. 重启或重新打开 Codex 会话，在技能选择器中确认，或明确输入 `$admitly-essay-coach`。
 4. 提供脱敏文书、目标学位/专业、申请年度、官方题目及字数限制；缺少的信息可以后补。
 
-交付的版本工作目录名为 `admitly-essay-coach-v0.3.2`；若直接复制这个目录安装，需改名为 `admitly-essay-coach`。ZIP 已使用正确的安装根目录。其他支持 Agent Skills 的客户端可按其说明放置目录；客户端工具、附件读取及浏览能力需要实际确认，不能保证所有客户端行为一致。
+交付的版本工作目录名为 `admitly-essay-coach-v0.3.3`；若直接复制这个目录安装，需改名为 `admitly-essay-coach`。ZIP 已使用正确的安装根目录。其他支持 Agent Skills 的客户端可按其说明放置目录；客户端工具、附件读取及浏览能力需要实际确认，不能保证所有客户端行为一致。
 
 参考：[Codex 官方技能文档](https://learn.chatgpt.com/docs/build-skills)。最低文件是 `SKILL.md`；`agents/openai.yaml` 提供 Codex 界面信息，其他客户端可忽略它。
 
@@ -52,15 +60,15 @@
 ## 开源
 原创部分采用 [MIT License](LICENSE)。参考项目的思想与链接不意味着复制其实现或授予第三方内容许可。贡献请使用合成案例，不提交真实申请材料、密钥或身份信息。
 
-## V0.3.2：依据比较实验的修订
+## 保留的表达改进（始于V0.2.1）
 
 在10个合成配对案例的模型预评中，V0.2未显示稳定的成稿优势。此次针对部分稿件动机概括、重复结尾及课程匹配解释不足做小幅修订：把已有材料讲具体，检查每段新增信息，缩短重复说明；不放松事实、政策或个人承诺确认要求。见[变更说明](CHANGELOG.md)及[本版验证](evals/RESULTS.md)。不宣称已经通过新版10案例盲评。
 
 可直接调用：`使用 $admitly-essay-coach，检查这段是否只重复学习愿望。请在已有事实与我已表达的目标内展开具体问题；新推断放正文外，别替我认领新兴趣。`
 
-安装目录名仍为admitly-essay-coach；将旧版备份到技能搜索目录外再替换。不要将V0.2与V0.3.2同时放在可发现目录中。
+安装目录名仍为admitly-essay-coach；将旧版备份到技能搜索目录外再替换。不要将V0.2与V0.3.3同时放在可发现目录中。
 
-## V0.3.2 整合变化
+## 保留的整合能力（始于V0.3.2）
 
 以V0.2.1为底稿，选择性吸收用户提供V0.3.1的薄素材处理、候选追踪、交接摘要、最小项目材料与反例测试思路。默认定性诊断；明确要求数字时保留原编辑量表与N/A规则，不把旧版按旧规则生成的合规记录改称失败。
 
@@ -71,3 +79,16 @@
 暂停调用：`请把当前必要的F/P/S状态、否决过的C和下一步整理为可复制交接摘要，留在对话中即可。`
 
 审查理由见[整合说明](MERGE_NOTES.md)，本版验证见[测试报告](evals/RESULTS.md)。其他客户端的具体安装路径未在本次验证，按其自身说明操作。
+
+## 客户端适配状态
+
+| 客户端 | 当前证据与安装入口 |
+|---|---|
+| Codex CLI | 已有实际行为回归；按上述目录安装，使用 `$admitly-essay-coach` |
+| Claude Code | 通用目录格式可移植，本Skill未完成行为验证；个人目录 `~/.claude/skills/admitly-essay-coach/`，使用 `/admitly-essay-coach`。本次本机CLI 2.1.72未登录，未调用Claude模型 |
+| Claude网页/Cowork | 官方支持在Customize → Skills上传技能ZIP；本包未实测，不把导入成功等同于行为正确 |
+| WorkBuddy | 官方提供本地技能包导入；本包未实测。开放平台市场还有展示名、作者等专用字段，当前通用ZIP不宣称已适配上架 |
+| Grok Bot / Meta Muse个人助手 | 尚未验证本包的原生导入与参考文件加载，不宣称即装即用；与Grok Build / Muse Code是不同产品 |
+| Muse Code | 官方文档支持`.agents/skills`及导入其他Agent技能；本包未实测 |
+
+其他客户端机制依据2026-10-25查阅的[Claude Code](https://code.claude.com/docs/en/skills)、[Claude技能](https://support.claude.com/en/articles/12512180-use-skills-in-claude)、[WorkBuddy](https://open.workbuddy.cn/en/docs/skill)、[Grok Bot](https://docs.x.ai/grok-bot/skills-routines-and-automations)、[Muse Code](https://dev.meta.ai/docs/muse-code/extending)官方说明。客户端能力与账号权限可能变化；Codex的`$`调用方式不等于所有客户端通用命令，也可用自然语言明确指定本技能名称。

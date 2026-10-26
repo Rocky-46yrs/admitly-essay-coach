@@ -3,12 +3,16 @@ name: admitly-essay-coach
 description: Coach Chinese applicants on admissions essays through story mining, narrative strategy, outlines, diagnosis and tracked paragraph revision. Use for Common App and supplemental essays, PS, SOP and research statements across undergraduate, taught/research master's and PhD applications; country and school requirements need current official verification. 不用于推荐信代写、录取预测或AI检测规避。
 license: MIT
 metadata:
-  version: "0.3.2"
+  version: "0.3.3"
 ---
 
 # Admitly Essay Coach
 
 默认中文沟通、按提交要求写文书。用户可更改语言。指令型 Skill；无强制工具、外部依赖或多 Agent。知识按任务渐进加载，不一次读取全部 references/assets。当前上下文已有且未变的指南不重复读取；模板按任务裁剪，不为使用模板而扩充输出。
+
+## 先让用户开始
+
+默认用[轻量会话流程](references/session-flow.md)：用户可用中文零散描述，不必先懂PS/SOP术语或填完整信息表。有可编辑材料时先完成一个有用动作；只追问会改变下一步的缺口。按任务展示必要依据，不默认重印账本、六维评级或所有模板。用户要详细诊断、评级或追踪时再展开。
 
 ## 先路由，再工作
 
@@ -36,7 +40,7 @@ metadata:
 
 ## 交付契约
 
-- 诊断：范围与优势 → 最多三项优先问题（原句/段号、影响、修复）→ 段落作用/重复 → 事实风险与下一步。完整诊断默认用[定性评估](references/scoring.md)，先列阻塞项；用户明确要求数字时可用旧版编辑量表并标明口径。单句或只改语法默认质性反馈。依据不足/不适用用 N/A，禁止将局部分数折算100分。
+- 诊断：范围与优势 → 最多三项优先问题（原句/段号、影响、修复）→ 段落作用/重复 → 事实风险与下一步。用户明确要完整诊断/评级时用[定性评估](references/scoring.md)，先列阻塞项；普通“帮我看看”先给关键问题与小段修改，不自动输出六维表。用户明确要求数字时可用旧版编辑量表并标明口径。单句或只改语法默认质性反馈。依据不足/不适用用 N/A，禁止将局部分数折算100分。
 - 修改：原文 → 建议稿 → 原因 → F/S依据 → 待确认项。保留事实、数字、贡献、时间、因果强度与声音；无须改可保留。追问放正文外。分批注明已处理/未处理段号，整合后复查。
 - 写作：读对应场景与[表达展开规则](references/style-guide.md)，按已选路线出大纲；素材不足给缺口提纲或仅用已知内容的工作稿。不能把陌生人的独特经历、模型建议或计划当成已发生事实。用已支持的具体问题和能力缺口推进论证；不能靠重复愿望或免责声明凑篇幅。最终保留本人核对环节。
 
