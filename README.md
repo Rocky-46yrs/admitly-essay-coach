@@ -87,8 +87,8 @@
 | Codex CLI | 已有实际行为回归；按上述目录安装，使用 `$admitly-essay-coach` |
 | Claude Code | 通用目录格式可移植，本Skill未完成行为验证；个人目录 `~/.claude/skills/admitly-essay-coach/`，使用 `/admitly-essay-coach`。本次本机CLI 2.1.72未登录，未调用Claude模型 |
 | Claude网页/Cowork | 官方支持在Customize → Skills上传技能ZIP；本包未实测，不把导入成功等同于行为正确 |
-| WorkBuddy | 官方提供本地技能包导入；本包未实测。开放平台市场还有展示名、作者等专用字段，当前通用ZIP不宣称已适配上架 |
+| WorkBuddy | 在“专家·技能·连接器 → 技能 → 添加技能 → 上传技能”选择本地ZIP；本包未实测。开放平台市场还有展示名、作者等专用字段，当前通用ZIP不宣称已适配上架 |
 | Grok Bot / Meta Muse个人助手 | 尚未验证本包的原生导入与参考文件加载，不宣称即装即用；与Grok Build / Muse Code是不同产品 |
 | Muse Code | 官方文档支持`.agents/skills`及导入其他Agent技能；本包未实测 |
 
-其他客户端机制依据2026-10-25查阅的[Claude Code](https://code.claude.com/docs/en/skills)、[Claude技能](https://support.claude.com/en/articles/12512180-use-skills-in-claude)、[WorkBuddy](https://open.workbuddy.cn/en/docs/skill)、[Grok Bot](https://docs.x.ai/grok-bot/skills-routines-and-automations)、[Muse Code](https://dev.meta.ai/docs/muse-code/extending)官方说明。客户端能力与账号权限可能变化；Codex的`$`调用方式不等于所有客户端通用命令，也可用自然语言明确指定本技能名称。
+其他客户端机制依据2026-10-26复查的[Claude Code](https://code.claude.com/docs/en/skills)、[Claude技能](https://support.claude.com/en/articles/12512180-use-skills-in-claude)、[WorkBuddy本地导入](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)、[WorkBuddy市场格式](https://open.workbuddy.cn/en/docs/skill)、[Grok Bot](https://docs.x.ai/grok-bot/skills-routines-and-automations)、[Muse Code](https://dev.meta.ai/docs/muse-code/extending)官方说明。客户端能力与账号权限可能变化；Codex的`$`调用方式不等于所有客户端通用命令，也可用自然语言明确指定本技能名称。
