@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-26",
+  "client": "WorkBuddy V5.8.3",
+  "model_label": "Deepseek-V4.1-Flash",
+  "skill_version": "0.3.2",
+  "runtime_matches_published_v032": true,
+  "runtime_files_compared": 19,
+  "method": "Native UI; preinstalled enabled skill; one completed synthetic turn; not isolated from host preferences",
+  "visible_tools": [
+    "admitly-essay-coach",
+    "CHANGELOG.md",
+    "references/revision-protocol.md",
+    "references/style-guide.md"
+  ],
+  "input": "草稿：I led a research team and improved participation by 30%. 真实情况：四人课堂小组，只整理12份问卷，未领导，也未测量参与率变化。要求直接诊断及修改，不全量访谈，不给总分。",
+  "observed_final_excerpt": "In a four-person group project for a course, I compiled the 12 questionnaires our group had collected.",
+  "observed_claim": "主稿（保守版，任何读法下都成立）",
+  "findings": [
+    "删除领导及30%断言，但新增小组曾收集问卷这一无来源事实",
+    "同时把问卷是否已填答列为待确认，却在主稿加入had collected",
+    "条件版用coded and tallied，条件描述却只要求录入/编码/汇总其中之一，未逐项获得依据",
+    "解释中称未实施干预；用户仅说未测量，未说明是否干预"
+  ],
+  "status": "Basic skill/reference loading verified; factual revision failed this case",
+  "followup": "Not completed: UI reported user changed app; stopped interaction, did not assume follow-up submitted",
+  "privacy": "No screenshots or unrelated task titles copied into report; all applicant facts synthetic"
+}
