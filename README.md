@@ -95,7 +95,7 @@
 | Codex CLI | 已有实际行为回归；按上述目录安装，使用 `$admitly-essay-coach` |
 | Claude Code | 通用目录格式可移植，本Skill未完成行为验证；个人目录 `~/.claude/skills/admitly-essay-coach/`，使用 `/admitly-essay-coach`。本次本机CLI 2.1.72未登录，未调用Claude模型 |
 | Claude网页/Cowork | 官方支持在Customize → Skills上传技能ZIP；本包未实测，不把导入成功等同于行为正确 |
-| WorkBuddy | 本机V5.8.3 + Deepseek-V4.1-Flash已验证加载V0.3.2及参考文件，但一条合成修改案例出现事实漂移；V0.3.3导入安全检测通过，更新及行为复测未完成。见[实测与更新限制](evals/WORKBUDDY-RUN.md)。本地ZIP入口为“专家·技能·连接器 → 技能 → 添加技能 → 上传技能”；不宣称已适配开放平台上架 |
+| WorkBuddy | 本机V5.8.3 + Deepseek-V4.1-Flash已验证加载V0.3.2及参考文件，但一条合成修改案例出现事实漂移；V0.3.3已导入且49个安装文件与发布包一致，行为复测未完成。见[实测与更新限制](evals/WORKBUDDY-RUN.md)。本地ZIP入口为“专家·技能·连接器 → 技能 → 添加技能 → 上传技能”；不宣称已适配开放平台上架 |
 | Grok Bot / Meta Muse个人助手 | 尚未验证本包的原生导入与参考文件加载，不宣称即装即用；与Grok Build / Muse Code是不同产品 |
 | Muse Code | 官方文档支持`.agents/skills`及导入其他Agent技能；本包未实测 |
 
