@@ -23,7 +23,7 @@ def validate(root):
         return errors
     skill = (root/'SKILL.md').read_text()
     header = re.match(r'^---\n(.*?)\n---\n', skill, re.S)
-    if not header or not re.search(r'^name: admitly-essay-coach$', header[1], re.M) or not re.search(r'^description: .{20,1024}$', header[1], re.M) or 'version: "0.3.3"' not in header[1]:
+    if not header or not re.search(r'^name: admitly-essay-coach$', header[1], re.M) or not re.search(r'^description: .{20,1024}$', header[1], re.M) or 'version: "0.3.4"' not in header[1]:
         errors.append('Invalid entrypoint metadata')
     ui = (root/'agents/openai.yaml').read_text()
     desc = re.search(r'short_description: "([^"]+)"', ui)

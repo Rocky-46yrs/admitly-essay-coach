@@ -50,3 +50,7 @@ I transcribed three audio recordings of classroom discussions made by classmates
 理由：这句话准确区分了同学录音与你转录、编码的贡献，未添加采访经历或效果评估。
 
 执行完成：14.12秒，exit_code=0；输入SHA-256 `e33ddc85f0e432bb3ef04a8d7c6b63edbaffe645126acb18ad2768c137dc219a`；响应SHA-256 `2d0b476c0eb2b7b9684b6314de603d56ed7404f17609d0d8c922802c37bb6cad`。
+
+## V0.3.4打包说明
+
+2026-11-01将上述已测运行规则打包为V0.3.4；打包仅更新版本标识和发布说明，未继续修改运行规则。上述“未发布”描述为测试时状态。旧48案例与5条旅程仍保留原始0.3.3元数据，不能当作本版重新执行的证据。WorkBuddy已安装版仍为0.3.3。

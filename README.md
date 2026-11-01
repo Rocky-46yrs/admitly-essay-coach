@@ -1,6 +1,6 @@
-# Admitly Essay Coach V0.3.3
+# Admitly Essay Coach V0.3.4
 
-[下载 v0.3.3 安装包](https://github.com/Rocky-46yrs/admitly-essay-coach/releases/download/v0.3.3/admitly-essay-coach-v0.3.3.zip) · [版本发布](https://github.com/Rocky-46yrs/admitly-essay-coach/releases) · [测试报告](evals/RESULTS.md)
+[下载 v0.3.4 安装包](https://github.com/Rocky-46yrs/admitly-essay-coach/releases/download/v0.3.4/admitly-essay-coach-v0.3.4.zip) · [版本发布](https://github.com/Rocky-46yrs/admitly-essay-coach/releases) · [测试报告](evals/RESULTS.md)
 
 面向中国申请者的免费开源 Agent Skill。优先兼容 Codex；不包含网站、账户或服务。Skill 本身无运行依赖；AI 客户端费用和数据处理规则由客户端决定。
 
@@ -18,12 +18,12 @@
 英美授课型硕士 PS/SOP 是原有重点。本科（Common App、补充文书等）、研究型硕士和博士（含 Research Statement）新增专门指导模块。美国、英国、加拿大、澳大利亚有路由边界；其他国家可提供通用指导。**模块存在不代表已核验所有学校、年度或题目**。学校当前官方要求和 AI 政策优先，无法核验就标记待核实。没有浏览工具也能诊断表达，但不能声称联网验证。
 
 ## 安装到 Codex
-1. 解压 `admitly-essay-coach-v0.3.3.zip`，得到 `admitly-essay-coach` 文件夹；确认其下一层就是 `SKILL.md`。
+1. 解压 `admitly-essay-coach-v0.3.4.zip`，得到 `admitly-essay-coach` 文件夹；确认其下一层就是 `SKILL.md`。
 2. 个人安装：将整个文件夹复制到 `~/.agents/skills/admitly-essay-coach/`。项目内安装则放到该项目的 `.agents/skills/admitly-essay-coach/`，二选一，避免同名重复。
 3. 重启或重新打开 Codex 会话，在技能选择器中确认，或明确输入 `$admitly-essay-coach`。
 4. 提供脱敏文书、目标学位/专业、申请年度、官方题目及字数限制；缺少的信息可以后补。
 
-交付的版本工作目录名为 `admitly-essay-coach-v0.3.3`；若直接复制这个目录安装，需改名为 `admitly-essay-coach`。ZIP 已使用正确的安装根目录。其他支持 Agent Skills 的客户端可按其说明放置目录；客户端工具、附件读取及浏览能力需要实际确认，不能保证所有客户端行为一致。
+交付的版本工作目录名为 `admitly-essay-coach-v0.3.4`；若直接复制这个目录安装，需改名为 `admitly-essay-coach`。ZIP 已使用正确的安装根目录。其他支持 Agent Skills 的客户端可按其说明放置目录；客户端工具、附件读取及浏览能力需要实际确认，不能保证所有客户端行为一致。
 
 参考：[Codex 官方技能文档](https://learn.chatgpt.com/docs/build-skills)。最低文件是 `SKILL.md`；`agents/openai.yaml` 提供 Codex 界面信息，其他客户端可忽略它。
 
@@ -74,7 +74,7 @@
 
 可直接调用：`使用 $admitly-essay-coach，检查这段是否只重复学习愿望。请在已有事实与我已表达的目标内展开具体问题；新推断放正文外，别替我认领新兴趣。`
 
-安装目录名仍为admitly-essay-coach；将旧版备份到技能搜索目录外再替换。不要将V0.2与V0.3.3同时放在可发现目录中。
+安装目录名仍为admitly-essay-coach；将旧版备份到技能搜索目录外再替换。不要将多个版本同时放在可发现目录中。
 
 ## 保留的整合能力（始于V0.3.2）
 
@@ -100,3 +100,7 @@
 | Muse Code | 官方文档支持`.agents/skills`及导入其他Agent技能；本包未实测 |
 
 其他客户端机制依据2026-10-26复查的[Claude Code](https://code.claude.com/docs/en/skills)、[Claude技能](https://support.claude.com/en/articles/12512180-use-skills-in-claude)、[WorkBuddy本地导入](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)、[WorkBuddy市场格式](https://open.workbuddy.cn/en/docs/skill)、[Grok Bot](https://docs.x.ai/grok-bot/skills-routines-and-automations)、[Muse Code](https://dev.meta.ai/docs/muse-code/extending)官方说明。客户端能力与账号权限可能变化；Codex的`$`调用方式不等于所有客户端通用命令，也可用自然语言明确指定本技能名称。
+
+## V0.3.4 更新说明
+
+本版只收紧修改流程中的事实检查：解释不能补充未知经历或材料来源，备选稿中每项新增行动须分别有依据。三条Codex合成测试已完成，证据见[事实保真回归](evals/PROVENANCE-RUN.md)。没有重跑完整旧测试集，也未在WorkBuddy验证V0.3.4；上表的WorkBuddy实测仍对应旧版。先备份旧安装目录再替换，本次发布不会自动更新任何客户端。

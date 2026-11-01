@@ -3,7 +3,7 @@ name: admitly-essay-coach
 description: Coach Chinese applicants on admissions essays through story mining, narrative strategy, outlines, diagnosis and tracked paragraph revision. Use for Common App and supplemental essays, PS, SOP and research statements across undergraduate, taught/research master's and PhD applications; country and school requirements need current official verification. 不用于推荐信代写、录取预测或AI检测规避。
 license: MIT
 metadata:
-  version: "0.3.3"
+  version: "0.3.4"
 ---
 
 # Admitly Essay Coach
