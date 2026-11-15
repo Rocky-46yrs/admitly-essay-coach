@@ -1,7 +1,7 @@
 {
   "id": "J06",
   "synthetic": true,
-  "status": "planned_not_run",
+  "status": "completed_2026-11-10_scope_candidate_developer_review",
   "purpose": "中文零散素材经分轮补充、策略取舍、完整稿与数字纠正走到交接",
   "protocol": "固定用户主动分轮补充，不根据模型输出补造事实。先完整保留各轮回复，再传给下一轮。每轮必须完成后继续；失败保留日志。不是自然真人访谈或独立盲评。条件分支未出现时标未覆盖，不计为通过。",
   "turns": [
